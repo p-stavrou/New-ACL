@@ -20,6 +20,7 @@ Route::get('/users1', function () {
 
 		$role = App\Role::find(1);
 		return (string)$role->can('create.user');
+		
 
 });
 
